@@ -1,16 +1,16 @@
-body{margin: 0;}
+body{margin: 0; background-color: #D1DCE0}
 header{
   color: #000000;
   position: fixed;
   top:0;
-  height: 6%;
+  height: 7%;
   width: 100%;
   background-color: #D1DCE0;
   text-align: center;
 }
 nav{
   position: fixed;
-  bottom: 0;
+  bottom: 1%;
   background-color: #D1DCE0;
   text-align: center;
   width: 100%;
