@@ -1,27 +1,121 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="css/index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1  ">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image x-icon"href="img/logo.png">
+    <link rel="stylesheet" href="css/master.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>DesigNive: About</title>
+    <title>DesigNive</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
-      <img src="picture/logo.png" alt="Logo">
       <h2>DesigNive</h2>
     </header>
+
     <div id="wrapper">
-      <div id="box1"></div>
-      <div id="box2"></div>
-      <div id="box3"></div>
-      <div id="box4"></div>
-      <footer><h4>This is only a school project none of the info is real</h4></footer>
+      <div class="startInfo">
+        <h1>DesgiNive</h1>
+        <h2>Your personal website design. Made entirely by hand and by a real person</h2>
+      </div>
+      <div class="startInfo">
+        <h1>Responsive Desgin</h1>
+        <h2>Made to fit the most used platforms </h2>
+      </div>
+      <div class="startInfo">
+        <h1>Easy To Expand</h1>
+        <h2>Using a repeatble pattern the website will easily expand as you company does</h2>
+      </div>
+      <div class="startInfo">
+        <h1>Free support and answers</h1>
+        <h2>We will personaly answer all you questions</h2>
+      </div>
+
     </div>
     <nav>
-      <a href="Example.html"><button class="navBTN">Example</button></a>
-      <a href="Contact.html"><button class="navBTN">Contact</button></a>
-      <a href=""><button id="active" class="navBTN">About</button></a>
+      <div class="menuItem" id="contact">
+        <p>Contact</p>
+      </div>
+      <div class="menuItem" id="about">
+        <p>About</p>
+      </div>
+      <div class="menuItem" id="support">
+        <p>Support</p>
+      </div>
+      <div class="menuItem" id="price">
+        <p>Price</p>
+      </div>
     </nav>
+
+    <div class="contact-info">
+      <h1>Ways To Contact</h1>
+      <p>
+        There are several ways to contact this team. Easiest is by sending us an email.
+        <h5>desginive@gmail.com</h5>or by phone <h5>123-456-78-90</h5>
+      </p>
+
+
+    </div>
+    <div class="about-info">
+      <h1>About DesgiNive</h1>
+      <p>
+        There are several ways to contact this team. Easiest is by sending us an email.
+        <h5>desginive@gmail.com</h5>or by phone <h5>123-456-78-90</h5>
+      </p>
+
+
+    </div>
+    <div class="support-info">
+      <h1>Support</h1>
+      <p>
+        There are several ways to contact this team. Easiest is by sending us an email.
+        <h5>desginive@gmail.com</h5>or by phone <h5>123-456-78-90</h5>
+      </p>
+
+
+    </div>
+    <div class="price-info">
+      <h1>Price</h1>
+      <p>
+        There are several ways to contact this team. Easiest is by sending us an email.
+        <h5>desginive@gmail.com</h5>or by phone <h5>123-456-78-90</h5>
+      </p>
+
+
+    </div>
+  <script>
+
+  $(document).ready(function(){
+      $("#contact").click(function(){
+        $(".contact-info").toggleClass('active');
+        $(".about-info").removeClass('active');
+        $(".support-info").removeClass('active');
+        $(".price-info").removeClass('active');
+      });
+      $("#about").click(function(){
+        $(".contact-info").removeClass('active');
+        $(".about-info").toggleClass('active');
+        $(".support-info").removeClass('active');
+        $(".price-info").removeClass('active');
+      });
+      $("#support").click(function(){
+        $(".contact-info").removeClass('active');
+        $(".about-info").removeClass('active');
+        $(".support-info").toggleClass('active');
+        $(".price-info").removeClass('active');
+      });
+      $("#price").click(function(){
+        $(".contact-info").removeClass('active');
+        $(".about-info").removeClass('active');
+        $(".support-info").removeClass('active');
+        $(".price-info").toggleClass('active');
+      });
+    });
+    function myFunction(x) {
+      x.classList.toggle("change");
+    }
+
+  </script>
   </body>
 </html>
