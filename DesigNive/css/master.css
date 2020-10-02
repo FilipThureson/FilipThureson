@@ -64,6 +64,7 @@ nav{
   text-align: center;
   top: 225vh;
   transition: 0.3s;
+  overflow-y:scroll;
 }
 .contact-info.active{
   top: 25vh;
@@ -78,6 +79,7 @@ nav{
   text-align: center;
   top: 225vh;
   transition: 0.3s;
+  overflow-y:scroll;
 }
 .about-info.active{
   top: 25vh;
@@ -92,6 +94,7 @@ nav{
   text-align: center;
   top: 225vh;
   transition: 0.3s;
+  overflow-y:scroll;
 }
 .support-info.active{
   top: 25vh;
@@ -106,6 +109,8 @@ nav{
   text-align: center;
   top: 225vh;
   transition: 0.3s;
+  overflow-y:scroll;
+
 }
 .price-info.active{
   top: 25vh;
