@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <title>DesigNive</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <header>
@@ -20,6 +21,11 @@
         <h2>Your personal website design. Made entirely by hand and by a real person
             Made to be a school project which mean none of this will is real.</h2>
       </div>
+      <div class="startInfo">
+        <h1>Examples</h1>
+        <p><a href="ExampleSites/e1.html">First Example</a></p>
+      </div>
+
       <div class="startInfo">
         <h1>Responsive Desgin</h1>
         <h2>Made to fit the most used platforms </h2>
@@ -35,6 +41,8 @@
 
     </div>
     <nav>
+
+      </div>
       <div class="menuItem" id="contact">
         <p>Contact</p>
       </div>
@@ -93,38 +101,5 @@
 
 
     </div>
-  <script>
-
-  $(document).ready(function(){
-      $("#contact").click(function(){
-        $(".contact-info").toggleClass('active');
-        $(".about-info").removeClass('active');
-        $(".support-info").removeClass('active');
-        $(".price-info").removeClass('active');
-      });
-      $("#about").click(function(){
-        $(".contact-info").removeClass('active');
-        $(".about-info").toggleClass('active');
-        $(".support-info").removeClass('active');
-        $(".price-info").removeClass('active');
-      });
-      $("#support").click(function(){
-        $(".contact-info").removeClass('active');
-        $(".about-info").removeClass('active');
-        $(".support-info").toggleClass('active');
-        $(".price-info").removeClass('active');
-      });
-      $("#price").click(function(){
-        $(".contact-info").removeClass('active');
-        $(".about-info").removeClass('active');
-        $(".support-info").removeClass('active');
-        $(".price-info").toggleClass('active');
-      });
-    });
-    function myFunction(x) {
-      x.classList.toggle("change");
-    }
-
-  </script>
   </body>
 </html>

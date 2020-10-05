@@ -1,0 +1,26 @@
+$(document).ready(function(){
+    $("#contact").click(function(){
+      $(".contact-info").toggleClass('active');
+      $(".about-info").removeClass('active');
+      $(".support-info").removeClass('active');
+      $(".price-info").removeClass('active');
+    });
+    $("#about").click(function(){
+      $(".contact-info").removeClass('active');
+      $(".about-info").toggleClass('active');
+      $(".support-info").removeClass('active');
+      $(".price-info").removeClass('active');
+    });
+    $("#support").click(function(){
+      $(".contact-info").removeClass('active');
+      $(".about-info").removeClass('active');
+      $(".support-info").toggleClass('active');
+      $(".price-info").removeClass('active');
+    });
+    $("#price").click(function(){
+      $(".contact-info").removeClass('active');
+      $(".about-info").removeClass('active');
+      $(".support-info").removeClass('active');
+      $(".price-info").toggleClass('active');
+    });
+  });
