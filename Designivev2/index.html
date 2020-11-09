@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image x-icon"href="img/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <h1 id="title" onclick="topScroll()">DesigNive</h1>
+        <div id="menu">
+            <a onclick="exampleScroll()">Info</a>    
+            <a href="support.html">Support</a>
+            <a onclick="exampleScroll()">Examples</a>
+            <a onclick="loginScroll()">Login</a>
+            <a onclick="loginScroll()" id="signup">Sign Up</a>
+        </div>
+    </header>
+    <main>
+        <div id="getStarted">
+           <h1>Get Started</h1>
+           <button onclick="startedScroll()"><a>Get Started Now</a></button>
+           <p>Get Started and elevate your company to the next level with a professionell website</p>
+        </div>
+        <article id="infowrapper">
+            <div id="InfoTitleBox">
+                <h1>Info</h1>
+            </div>
+            <div id="InfoBox">
+                <p>
+                    eofjeiweib bla blallla bla lfaaaa bllaaaaa lgefn  dkkefn lknawnkd nkl lkanwlkn 
+                </p>
+            </div>
+        </article>
+        <article id="loginWrapper">
+            <div id="loginPage">
+                <h2>Login</h2>
+                <form onsubmit="alertFunction()">
+                    <label for="">Username</label>
+                    <br>
+                    <input placeholder="Username" type="text" name="username" required><br>
+                    <label for="">Password</label>
+                    <br>
+                    <input placeholder="Password" type="password" name="username" required>
+                    <br>
+                    <br>
+                    <input type="submit" id="loginBTN"></input>
+                </form>
+
+            </div>
+            <div id="registerPage">
+                <h2>Register</h2>
+                <form onsubmit="alertFunction()">
+                    <label for="">Username</label>
+                    <br>
+                    <input type="text" placeholder="Username" name="username" required><br>
+                    <label for="">Password</label>
+                    <br>
+                    <input type="password" placeholder="Password" name="username" required>
+                    <br>
+                    <label for="">Email</label>
+                    <br>
+                    <input type="email" placeholder="Example@mail.com" name="username" required>
+                    <br>
+                    <br>
+                    <input type="submit" id="loginBTN"></input>
+                </form>
+            </div>
+        </article>
+        <article id="getstartedInfo">
+            <div id="leftStarted">
+            <h1>Get Started</h1>
+            <p>Choose your style</p>
+                <select name="choice" id="choice">
+                    <option value="basic">Basic</option>
+                    <option value="adaptive">Adaptive</option>
+                    <option value="animated">Animated</option>
+                    <option value="tailorMade">Tailor-Made</option>
+                </select>
+            </div>
+            <div id="rightStarted">
+    
+            </div>
+        </article>
+        <article id="examples">
+            <h1>Example Templates</h1>
+            <p>Here you can see some of our example websites</p>
+            <h4>The best for bloggers</h4>
+            <p>Pc Mode</p>
+            <img src="img/ExampleBlog PC.PNG" alt="pcBlog" id="pcBlog">
+            <p>Mobile Version</p>
+            <img src="img/ExampleBlogPhone.PNG" alt="Mobile Phone Example" id="mobileBlog">
+        </article>
+
+    </main>
+
+    <footer>
+        <h2>Contact Info:</h2>
+        <ul>
+            <li>Instagram: DesigNive_Offical</li>
+            <li>Mail: designive@gmail.com</li>
+            <li>Twitter: DesigNive_Offical</li>
+            <li>Facebook: DesigNive_Offical</li>
+        </ul>
+        <p> NOTE That none of this is real contact info and if you find someone with this name do not <br>  try to contact them about this, This website is created just for a school assignment</p>
+    </footer>
+    <div id="scrollBtn">
+        <img src="img/scrolltopmig.png" alt="Arrow " id="ScrollIcon" onclick="topFunction()">
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

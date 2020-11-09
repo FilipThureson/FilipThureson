@@ -1,47 +1,136 @@
 body{
-  margin: 0;
-  padding: 0;
+  margin: 0%;
   overflow: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+nav{
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(30, 30, 30, 0.95);
+  color: rgba(255, 255, 255);
+}
+.menuWrapper{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin-top: 0.5rem;
+}
+.menuItem{
+  cursor: pointer;
 }
 header{
   display: none;
 }
-nav{
-  top:0;
-  left: 0;
-  width: 100vw;
-  position: fixed;
-  display: flex;
-  justify-content: space-around;
-  background-color: rgba(30, 30, 30, 0.95);
-  color: white;
-
-}
-.wrapper{
-  justify-content: space-between;
-  display: flex;
-  width: 50%;
-}
-.wrapper div{
-  margin-top: auto;
-  margin-bottom: auto;
-}
 #wrapper{
   position: fixed;
-  top: 10vh;
-  background-color: cyan;
-  width: 100vw;
-  height: 90vh;
-  overflow-y: scroll;
+  width: 50vw;
   display: flex;
+  margin-top: 5rem;
+  height: 85vh;
+  overflow-y: scroll;
+  left: 50vw;
+  display: grid;
+  grid-template-columns: 25vw 25vw;
+  grid-template-rows: 25vw 25vw;
+  grid-template-areas: 
+  "b1 b2"
+  "b3 b4";
 }
+#box1{
+  grid-area: b1;
+}
+#box2{
+  grid-area: b2;
+
+}
+#box3{
+  grid-area: b3;
+
+}
+#box4{
+  grid-area: b4;
+
+}
+
 .startInfo{
-  width: 60vw;
-  height: 30vw;
-  background-color: rgba(30, 30, 30, 0.85);
-  margin: 5rem;
+  background-color: rgba(30, 30, 30, 0.95);
+  margin:1rem;
+  color: rgba(255, 255, 255);
+  text-align: center;
+  font-size: 10px;
 }
-@media screen and (max-width:800px) {
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: rgba(30, 30, 30, 0.95);
+  color: white;
+}
+#footerLeft{
+  margin-left: 1rem;
+  width: 50%;
+}
+#footerRight{
+  width: 50%;
+}
+
+
+.price-info{
+  background-color: rgba(90, 90, 90);
+  height: 50vh;
+  width: 92vw;
+  position: fixed;
+  left: 4vw;
+  right: 4vw;
+  text-align: center;
+  top: 225vh;
+  transition: 0.3s;
+  overflow-y:scroll;
+}
+.contact-info{
+  background-color: rgba(90, 90, 90);
+  height: 50vh;
+  width: 92vw;
+  position: fixed;
+  left: 4vw;
+  right: 4vw;
+  text-align: center;
+  top: 225vh;
+  transition: 0.3s;
+  overflow-y:scroll;
+}
+.about-info{
+  background-color: rgba(90, 90, 90);
+  height: 50vh;
+  width: 92vw;
+  position: fixed;
+  left: 4vw;
+  right: 4vw;
+  text-align: center;
+  top: 225vh;
+  transition: 0.3s;
+  overflow-y:scroll;
+}
+.support-info{
+  background-color: rgba(90, 90, 90);
+  height: 50vh;
+  width: 30vw;
+  position: fixed;
+  left: 4vw;
+  right: 4vw;
+  text-align: center;
+  margin-top: 5rem;
+  transition: 0.3s;
+  overflow-y:scroll;
+}
+@media screen and (max-width:1000px) {
+  footer{
+    display: none;
+  }
   body{
     font-family: 'Poppins', sans-serif;
     overflow: hidden;
@@ -58,7 +147,7 @@ nav{
     top: 0;
     left: 0;
     text-align: center;
-    display:block;
+    display: inline;
   }
 
   .startInfo{
@@ -70,32 +159,26 @@ nav{
     margin-bottom: 1rem;
     color: rgba(255, 255, 255);
     text-align: center;
+    font-size: 16px;
   }
   #wrapper{
     position: fixed;
+    left:0;
+    display: inline;
     margin-top: 6rem;
-    margin-left: 3vw;
-    margin-right: 7vw;
-    width: 90vw;
+    margin-left: auto;
+    margin-right: 10vw;
+    width: 100vw;
     height: 78vh;
     overflow-y: scroll;
   }
-  .wrapper{
-    background-color: rgba(30, 30, 30, 0.95);
-    height: 4rem;
-    width: 100%;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    display: flex;
-  }
   nav{
     background-color: rgba(30, 30, 30, 0.95);
-    height: 4rem;
+    height: 5rem;
     width: 100%;
     color: white;
     position: fixed;
+    top: auto;
     bottom: 0;
     left: 0;
     display: flex;
@@ -103,6 +186,11 @@ nav{
   .menuItem{
     margin: auto;
     justify-content: space-around;
+  }
+  .menuWrapper{
+    justify-content: space-around;
+    display: flex;
+    width: 100vw;
   }
   .desktopTitle{
     display: none;
@@ -163,7 +251,6 @@ nav{
     top: 225vh;
     transition: 0.3s;
     overflow-y:scroll;
-
   }
   .price-info.active{
     top: 25vh;

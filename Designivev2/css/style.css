@@ -1,0 +1,217 @@
+@media screen and (min-width: 980px){
+    body{
+        margin: 0;
+        padding: 0; 
+        overflow-x: hidden;
+        font-family: 'Poppins', sans-serif;
+    }
+    a{
+        text-decoration: none;
+        color:#f1f1f1;
+    }
+    #header{
+        position: fixed;
+        top: 0;
+        background-color: rgba(70,70,70, 0.95);
+        width: 100vw;
+        padding: 1rem;
+        text-align: center;
+        color: #f1f1f1;
+        display: flex;
+        justify-content: space-around;
+        transition: 0.5s;
+        z-index: 2;
+    }
+    #menu{
+        width: 70%;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    #menu a{
+        margin: 2rem;
+        text-decoration: none;
+        justify-content: space-around;
+        color: white;
+        padding: 0.5rem 0.5rem;
+        border-radius: 10px;
+    }
+    #menu a:hover{
+        cursor: pointer;
+        color: #f1f1f1;
+        transition: 0.5s;
+        background-color: dodgerblue;
+    }
+    main{
+        background-color: transparent;
+        width: 100vw;
+        height: auto;
+        margin-top: 40vh;
+    }
+    
+    #getStarted{
+        position: absolute;
+        top: 0;
+        height: 750px;
+        width: 100vw;
+        align-items: center;
+        text-align: center;
+        background-image: url(../img/macSetup.jpg);
+        background-size:100%;
+        background-repeat: no-repeat;
+        color: #f1f1f1;
+    
+    }
+    #getStarted h1{
+        margin-top: 25%;
+        color: #f1f1f1;
+    }
+    #getStarted Button{
+        padding: 1rem 2rem;
+        border-radius: 1rem;
+        border: #f1f1f1 2px solid;
+        background-color: transparent;
+        transition: 0.3s;
+    }
+    #getStarted Button:hover{
+        background-color: dodgerblue;
+    }
+    #infowrapper{
+        display: flex;
+        width: 100vw;
+        margin-top: 725px;
+        background-color:white;
+    }
+    #InfoTitleBox{
+        width:50vw;
+        height:25vw;
+        text-align: center
+    }
+    #InfoTitleBox h1{
+        margin-top: 25%;
+        font-size: 2rem;
+    }
+    #InfoBox{
+        width: 50vw;
+        height: 25vw;
+        text-align: center;
+        transition: 1s;
+    }
+    #InfoBox p{
+        margin-top: 25%;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        font-size: 20px;
+    }
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: rgba(70,70,70, 0.90);
+        border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background:rgba(70,70,70, 0.90);
+    }
+    #signup{
+        background-color: dodgerblue;
+        border-radius: 1rem;
+    }
+    #signup:hover{
+        padding: 0.75rem 0.75rem;
+    }
+    #scrollBtn{
+        transition: .7s;
+        position: fixed;
+        right: -100rem;
+        bottom: 1rem;
+        height: 10vh;
+        width: 10vh;
+    
+    }
+    #scrollIcon{
+        width: 100%;
+        height: 100%;
+    }
+    #loginWrapper{
+        display: flex;
+        width: 100vw;
+        border: 1px solid  black;
+    }
+    #loginPage{
+        text-align: center;
+        width: 50%;
+        padding: 1rem 1rem;
+        height: 45vh;
+    }
+    #registerPage{
+        width: 50%;
+        text-align: center;
+        height: 45vh;
+        padding: 1rem 1rem;
+    }
+    #loginBTN{
+        padding: 0.5rem 0.5rem;
+        border-radius: 10px;
+        border: 1px solid black;
+        color: black;
+        background-color: transparent;
+        margin-top: 5px;
+    }
+    #loginBTN:hover{
+        background-color: dodgerblue;
+        transition: 0.3s;
+    }
+    #getstartedInfo{
+        display: flex;
+        width: 100%;
+        border-bottom: 1px solid black;
+    }
+    #choice{
+        margin-left: auto;
+        margin-left: auto;
+        height: 5vw;
+        width: 10vw;
+        font-size: 1.5rem;
+    }
+    #leftStarted{
+        text-align: center;
+        padding: 3rem;
+        width:50%;
+        border-right: 1px solid black;
+    }
+    #rightStarted{
+        text-align: center;
+        padding: 3rem;
+        width:50%;
+        border-right: 1px solid black;
+    }
+    footer{
+        padding: 1rem;
+        display: flex;
+        background-color: rgba(70,70,70, 0.90);
+        color: #f1f1f1;
+    }
+    footer ul{
+        list-style: none;
+    }
+    footer p{
+        margin-left: 5vw;
+    }
+    #pcBlog{
+        width: 48%;
+        height: 51%;
+    }
+    #examples{
+        text-align: center;
+        padding: 1rem 1rem;
+    }
+    #mobileBlog{
+        width: 30%;
+    }
+    #hamburger{
+        display: none;
+    }
+}

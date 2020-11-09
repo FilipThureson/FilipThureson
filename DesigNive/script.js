@@ -23,4 +23,10 @@ $(document).ready(function(){
       $(".support-info").removeClass('active');
       $(".price-info").toggleClass('active');
     });
-  });
+    $("#wrapper").click(function(){
+      $(".contact-info").removeClass('active');
+      $(".about-info").removeClass('active');
+      $(".support-info").removeClass('active');
+      $(".price-info").removeClass('active');
+    });
+});
